@@ -25,6 +25,7 @@ function closeMenuOutside(event) {
 
 openMenuBtn.addEventListener("click", openMenu);
 closeMenuBtn.addEventListener("click", closeMenu);
+overlay.addEventListener("click", closeMenu);
 
 menu.addEventListener("transitionend", function() {
     this.removeAttribute("style");
